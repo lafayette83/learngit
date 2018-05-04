@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- <link href="taobao.css" rel="stylesheet"> -->
+    <script src="file1.js" defer></script>
+    <title>Critical Path: Script</title>
+   
+  </head>
+  <body>
+     <script>
+       for(j=0; j<9999999; j++) {
+   
+}
+console.log("j  "+j);
+     </script>
+    <p>Hello <span>web performance</span> students!</p>
+    <p><img src="image/1.png"></p>
+    <script >
+       alert(document.readyState);
+       document.onreadystatechange = function() {
+        alert(document.readyState);
+       }
+       document.addEventListener('DOMContentLoaded', function(){
+        alert("DOMContentLoaded")
+       })
+       window.onload = function(){
+        alert("this is complete");
+       }
+    </script>
+    <script defer>
+ alert("defer");
+ </script>
+ <script> 
+ alert("script");
+ </script>
+ <script>
+ window.onload = function(){
+ alert("load");
+ };
+ </script>
+  </body>
+  </html>
